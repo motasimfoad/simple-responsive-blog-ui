@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154721739-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154721739-1');
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="https://motasimfoad.com/favicon.ico"/>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title> Generate EXE file using terminal on OSX/MAC - Motasim Foad's blog</title>
+  </head>
+  <body>
+          <main>
+            <div class="container text-center">
+                <img src="https://miro.medium.com/max/1024/1*uhSX5djhrWiguXoWsW_lEw.png" class="img-fluid" alt="microsoft dotnet logo transparent background">
+                    <hr />
+                <div class="row">
+                    <h1>
+                        Generate EXE file using terminal on OSX/MAC
+                    </h1>
+                    <hr />
+                    <p>
+                        <h3>
+                            Instructions : 
+                        </h3>
+                    </p>
+                    <dl>
+                        <dt>1- Open <span class="badge"><strong>terminal</strong></span> and type <span class="badge"> <strong>csc -version</strong></span>
+                        to verify that if you have <span class="badge"><strong>csc</strong></span> on your local machine. 
+                        If, everything is ok, you will get the following text in <span class="badge"><strong>terminal</strong></span>
+                        </dt>
+                        <dd>
+                           <img src="../../../assets/images/posts/dotnet/generate_exe/1.png" class="img-fluid img_padding" alt="terminal csc -version" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>2- Open the project folder via terminal. Lets assume your project name is <span class="badge"><strong>test</strong></span>. 
+                            Type in <span class="badge"><strong>cd test</strong></span> &amp; and type <span class="badge"><strong>open .</strong></span> to open in finder</dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/generate_exe/2.png" class="img-fluid img_padding" alt="terminal change directory and open" onclick="modalOn(this.src)">
+                            <p><small>To create a visual studio console app project using c# visit : 
+                            <a href="http://127.0.0.1:5500/post/dotnet/create_app/index.html" target="_blank"> Create console app!</a>
+                            </small></p>
+                        </dd>
+                        <dt>3- In <span class="badge"><strong>finder</strong></span> you will see 1 folder named as same as your project name, and also a <span class="badge"><strong>.sln</strong></span>
+                        file named as same as your project name, in this case, test
+                        </dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/generate_exe/4.png" class="img-fluid img_padding" alt="visual studio console app page finder page" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>4- In <span class="badge"><strong>terminal</strong></span>, again change your directory using 
+                            <span class="badge"> <strong>cd test</strong></span>,
+                             and hit <span class="badge"> <strong>enter</strong></span>. Type in <span class="badge"><strong>ls</strong></span> in terminal to browser your project directory
+                            using terminal
+                            </dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/generate_exe/3.png" class="img-fluid img_padding"  alt="terminal change directory and open" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>5- Here you will find a file named  
+                            <span class="badge"><strong>Program.cs</strong></span>. This is what we need to generate a <span class="badge"><strong>.EXE</strong></span> file
+                        </dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/generate_exe/6.png" class="img-fluid img_padding" alt="visual studio console app page finder page" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>6- In terminal type in 
+                            <span class="badge"><strong>csc Program.cs </strong></span> 
+                            If, everything goes ok you will  see the following message in <span class="badge"><strong>terminal</strong></span>
+                        </dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/generate_exe/7.png" class="img-fluid img_padding" alt="terminal csc app compile" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>7- Type in <span class="badge"><strong>ls</strong></span> to see the <span class="badge"><strong>EXE</strong></span> file using terminal or 
+                            type in <span class="badge"><strong>open .</strong></span> to see the EXE file using finder 
+                        </dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/generate_exe/5.png" class="img-fluid img_padding" alt="terminal change directory and open" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>8- OR type in <span class="badge"><strong>open .</strong></span> to see the EXE file using finder 
+                        </dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/generate_exe/8.png" class="img-fluid img_padding" alt="visual studio console app page finder page" onclick="modalOn(this.src)">
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="modalOff()">&times;</span>
+                <img class="modal-content" id="img01">
+            </div>
+        </main>
+    <footer>&copy; <script>document.write(new Date().getFullYear());</script> 
+        <a href="https://motasimfoad.com" target="_blank">Motasim Foad</a>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var modalOn = function(_src){
+              modal.style.display = "block";
+              modalImg.src = _src;
+        }
+        var modalOff = function(){
+              modal.style.display = "none";
+        }
+    </script>
+  </body>
+</html>

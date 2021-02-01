@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(55, 53, 75);
+    color: rgb(202, 182, 183);
+    /* color: rgb(222, 149, 125); */
+    /* color: rgb(75, 73, 91); */
+}
+
+main{
+    border-color: rgb(75, 73, 91);
+    border-width: 3px;
+    border-style: solid;
+    margin: 1%;
+}
+
+.img-fluid{
+    margin-top: 0.5%;
+    /* width: 70%; */
+}
+
+nav{
+    background-color: transparent ;
+}
+
+footer{
+    text-align: center;
+}
+
+.img_padding{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.row{
+    /* background-color: beige; */
+    text-align: left;
+    /* margin-top: 10%; */
+}
+
+.left{
+    /* background-color: aqua; */
+    padding-top: 1%;
+}
+
+.right{
+    /* background-color: blue; */
+    padding-top: 1%;
+}
+
+.img-thumbnail{
+    height: 100%;
+    width: 50%;
+}

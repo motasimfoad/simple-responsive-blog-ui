@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154721739-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154721739-1');
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="https://motasimfoad.com/favicon.ico"/>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title> Create console app using visual studio, dot net framework and c# on OSX/MAC - Motasim Foad's blog</title>
+  </head>
+  <body>
+          <main>
+            <div class="container text-center">
+                <img src="https://miro.medium.com/max/1024/1*uhSX5djhrWiguXoWsW_lEw.png" class="img-fluid" alt="microsoft dotnet logo transparent background">
+                    <hr />
+                <div class="row">
+                    <h1>
+                        Create console app using visual studio, dot net framework and c# on OSX/MAC
+                    </h1>
+                    <hr />
+                    <p>
+                        <h3>
+                            Instructions : 
+                        </h3>
+                    </p>
+                    <dl>
+                        <dt>1- Open vs code to get to the landing page and click on <span class="badge"> + New</span></dt>
+                        <dd>
+                           <img src="../../../assets/images/posts/dotnet/create_n_run_project/1.png" class="img-fluid img_padding" alt="visual studio landing page" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>2- Choose <span class="badge"><strong>Console Application</strong></span><small> <i><u>web and console</u></i></small> &amp; with <span class="badge"><strong>C#</strong></span></dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/create_n_run_project/2.png" class="img-fluid img_padding" alt="visual studio select template page" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>3- Select <span class="badge"><strong>.NET 5.0</strong></span> as <em>target framework</em></dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/create_n_run_project/3.png" class="img-fluid img_padding" alt="visual studio configure console app page" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>4- Give your project a <span class="badge"><strong>name</strong></span>, choose your preferred <span class="badge"> <strong>project folder location</strong></span>,
+                             and press <span class="badge"> <strong>create</strong></span></dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/create_n_run_project/4.png" class="img-fluid img_padding" alt="visual studio configure console app page" onclick="modalOn(this.src)">
+                        </dd>
+                        <dt>5- A test app will be generated for you containing 
+                            <span class="badge">"Hello World"</span>, Press <span class="badge">F5</span> or <span class="badge">Command + F5</span> 
+                            or press the <span class="badge">play</span> button from top toolbar to build and run the app. 
+                             A terminal will be opened with the app running. 
+                        </dt>
+                        <dd>
+                            <img src="../../../assets/images/posts/dotnet/create_n_run_project/5.png" class="img-fluid img_padding" alt="visual studio code editor and app build or run page" onclick="modalOn(this.src)">
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="modalOff()">&times;</span>
+                <img class="modal-content" id="img01">
+            </div>
+        </main>
+    <footer>&copy; <script>document.write(new Date().getFullYear());</script> 
+        <a href="https://motasimfoad.com" target="_blank">Motasim Foad</a>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var modalOn = function(_src){
+              modal.style.display = "block";
+              modalImg.src = _src;
+        }
+        var modalOff = function(){
+              modal.style.display = "none";
+        }
+    </script>
+  </body>
+</html>
