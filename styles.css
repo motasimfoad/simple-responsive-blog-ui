@@ -1,8 +1,6 @@
 body{
     background-color: rgb(55, 53, 75);
     color: rgb(202, 182, 183);
-    /* color: rgb(222, 149, 125); */
-    /* color: rgb(75, 73, 91); */
 }
 
 main{
@@ -14,7 +12,6 @@ main{
 
 .img-fluid{
     margin-top: 0.5%;
-    /* width: 70%; */
 }
 
 nav{
@@ -31,22 +28,40 @@ footer{
 }
 
 .row{
-    /* background-color: beige; */
-    text-align: left;
-    /* margin-top: 10%; */
+   text-align: left;
 }
 
 .left{
-    /* background-color: aqua; */
     padding-top: 1%;
 }
 
 .right{
-    /* background-color: blue; */
     padding-top: 1%;
 }
 
 .img-thumbnail{
     height: 100%;
     width: 50%;
+}
+
+.navbar-brand{
+    color: aliceblue;
+}
+
+h3{
+    text-align: center;
+}
+
+.card{
+   margin: 1%;
+}
+
+.card:hover{
+    box-shadow: 5px 5px #888888;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    margin-top: 1%;
 }

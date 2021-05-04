@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    background-color: rgb(55, 53, 75);
+    color: rgb(202, 182, 183);
+    font-family: 'Raleway', sans-serif;
+}
+
+main{
+    border-color: rgb(75, 73, 91);
+    border-width: 3px;
+    border-style: solid;
+    margin: 1%;
+}
+
+.img-fluid{
+    margin-top: 0.5%;
+}
+
+.badge{
+    background-color: rgb(222, 149, 125);
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.img_padding{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50%;
+}
+
+.row{
+    text-align: left;
+}
+
+.left{
+    padding-top: 1%;
+}
+
+.right{
+    padding-top: 1%;
+}
+
+.img-thumbnail{
+    height: 100%;
+    width: 50%;
+}
+
+#img_padding:hover {
+    opacity: 0.7;
+}
+  
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+   
+  }
+  
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
